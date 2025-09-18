@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG and CSS animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+
+<!--  1. The page could for example be an invitation to an event, a celebration card, etc. 
+  The page must contain at least one CSS transition, at least one keyframe animation, 
+  and at least one animation added from an external library such as animate.css. -->
+
+<body class="body">
+
+    <main>
+
+        <div class="main-container">
+
+            <h1 class="title animate__animated animate__tada animate__infinite">Invitation!</h1>
+
+            <p class="text">Meooww meow meow. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut magna vel
+                tortor semper
+                pretium
+                sed id enim.
+                Nunc vel commodo nunc. Nulla facilisi. Proin augue dui, dignissim vel ex hendrerit, faucibus commodo
+                felis. <br> <br>
+                Aenean convallis elit id pellentesque sagittis. Vivamus mattis diam at dui suscipit porta. Vestibulum
+                molestie odio ut purus pulvinar gravida. Fusce metus erat, laoreet ac rhoncus nec, vehicula ac tellus.
+                Maecenas nec metus mi. Sed lobortis leo in odio iaculis, semper commodo lectus porta. In eget luctus
+                nunc,
+                sed vulputate odio. Proin sagittis, lectus ac lacinia egestas, diam augue venenatis mi, id semper urna
+                orci
+                eu enim. Nullam sed turpis aliquet, posuere leo quis, cursus sapien. Meow meow meow.
+            </p>
+
+            <div>
+                <img src="images/catparty.jpg" class="cat-party">
+            </div>
+
+        </div>
+
+        <section class="svg-images">
+
+            <svg>
+                <use xlink:href="images/decline.svg#decline"></use>
+            </svg>
+
+
+            <div class="accept">
+                <svg viewbox="0 0 240 240" fill="none" xlmns="https://www.w3.org/TR/SVG2/">
+                    <circle cy="110" cx="110" r="100" stroke="green" stroke-width="20" fill="transparent" />
+                    <polyline points="70, 120 100, 165 150, 80" stroke="green" stroke-width="20" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+
+            <div class="btn-container">
+                <button class="accept-btn">Accept invite</button>
+
+                <button class="decline-btn">Decline invite</button>
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
